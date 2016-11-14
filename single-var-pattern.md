@@ -8,6 +8,6 @@ function func() {
       myobject = {},
       i,
       j;
-    // function body
+  // function body
 }
 ```
