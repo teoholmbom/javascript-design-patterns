@@ -2,10 +2,13 @@
 
 ## Start with an empty object
 ```javascript
+// empty object
 var cat = {};
 
+// add variable
 cat.age = 5;
 
+// add a method
 cat.getAge = function () {
   return cat.age;
 };
@@ -21,10 +24,16 @@ var cat = {
 ```
 ## Start with a custom constructor function
 ```javascript
-var Cat = function (age) {
-  this.age = age;
-  this.getAge = function () {
-    return this.age;
+// define object constructor function
+var Cat = function (sound) {
+  this.sound = sound;
+  this.getSound = function () {
+    return this.sound;
   };
 };
+
+// create object
+var nisse = new Cat('Mjau');
+nisse.getSound();
+
 ```
