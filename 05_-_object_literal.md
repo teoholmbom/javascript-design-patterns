@@ -1,6 +1,6 @@
 # The Object Literal Syntax
 
-## Start With An Empty Object
+## Start with an empty object
 ```javascript
 var cat = {};
 
