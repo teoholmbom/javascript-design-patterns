@@ -49,7 +49,6 @@ function Cat() {
   this.type = "Tiger";
   
 }
+
 Cat.prototype.sound = "Rawr";
-
-
 ```
