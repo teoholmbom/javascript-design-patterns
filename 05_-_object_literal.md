@@ -10,7 +10,7 @@ cat.getAge = function () {
   return cat.age;
 }
 ```
-## Start Wwith a filled object
+## Start with a filled object
 ```javascript
 var cat = {
   age: 5,
