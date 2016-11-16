@@ -13,7 +13,7 @@ cat.getAge = function () {
   return cat.age;
 };
 ```
-## Start with a filled object
+## Start with a defined object
 ```javascript
 var cat = {
   age: 5,
@@ -41,13 +41,10 @@ nisse.getSound();
 
 ```javascript
 function Cat() {
- 
   if (!(this instanceof Cat)) {
     return new Cat()
   }
-  
   this.type = "Tiger";
-  
 }
 
 Cat.prototype.sound = "Rawr";
