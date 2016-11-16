@@ -8,7 +8,7 @@ cat.age = 5;
 
 cat.getAge = function () {
   return cat.age;
-}
+};
 ```
 ## Start with a filled object
 ```javascript
@@ -17,5 +17,14 @@ var cat = {
   getAge: function () {
   return cat.age;
   }
-}
+};
+```
+## Start with a custom constructor function
+```javascript
+var Cat = function (age) {
+  this.age = age;
+  this.getAge = function () {
+    return this.age;
+  };
+};
 ```
