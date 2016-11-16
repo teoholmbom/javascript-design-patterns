@@ -33,7 +33,23 @@ var Cat = function (sound) {
 };
 
 // create object
-var nisse = new Cat('Mjau');
+var nisse = new Cat("Mjau");
 nisse.getSound();
+```
+
+## Self-invoking constructor enforcing 'new'
+
+```javascript
+function Cat() {
+ 
+  if (!(this instanceof Cat)) {
+    return new Cat()
+  }
+  
+  this.type = "Tiger";
+  
+}
+Cat.prototype.sound = "Rawr";
+
 
 ```
